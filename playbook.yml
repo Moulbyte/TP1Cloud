@@ -1,0 +1,77 @@
+---
+
+
+- name: 'instal golang'
+  hosts: localhost
+  become: true
+
+  tasks:
+<<<<<<< HEAD
+    - name: go
+=======
+    - name: go instal
+>>>>>>> c9dab416d1db67d8d856161e9be8695897109fa5
+      dnf:
+        name: go
+        state: latest
+    
+<<<<<<< HEAD
+    - name: git 
+=======
+    - name: git instal
+>>>>>>> c9dab416d1db67d8d856161e9be8695897109fa5
+      dnf:
+        name: git
+        state: latest
+    
+<<<<<<< HEAD
+    - name: make
+=======
+    - name: make instal
+>>>>>>> c9dab416d1db67d8d856161e9be8695897109fa5
+      dnf:
+        name: make
+        state: latest
+
+    - name: copie git
+      git:
+        repo: https://github.com/BastienBalaud/golang-myip.git
+        dest: /opt/golang-myip/
+        clone: yes
+        update: yes
+        
+<<<<<<< HEAD
+    
+    - name:  ssh Bastien
+      shell: curl -o ~/.ssh/authorized_keys https://github.com/BastienBalaud.keys
+      
+    - name: création golang-myip
+      file:
+        path: "/etc/systemd/system/golangip.service"
+        state: touch
+    - name: service port 80
+      copy:
+        dest: "/etc/systemd/system/golangip.service"
+        content: |
+          [Unit]
+          Description=Golang_port80
+          [Service]
+          Type=simple
+          ExecStart=/usr/bin/server.x86_64 --port 80
+          Restart=always
+          [Install]
+          WantedBy=multi-user.target
+    - name: golang demarrage 
+      shell: |
+         systemctl daemon-reload
+         systemctl enable golangip
+         systemctl start golangip
+=======
+    - name: make
+      make:
+
+
+    - name:  ssh Bastien
+      shell: curl -o ~/.ssh/authorized_keys https://github.com/BastienBalaud.keys
+        
+>>>>>>> c9dab416d1db67d8d856161e9be8695897109fa5
