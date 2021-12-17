@@ -20,7 +20,7 @@ Thomas DRONET
 
 **clé ssh**
 
-géneration d'une clé ssh puis ajout de celle-ci dans githube et dans le fichier rocky-8.cfg
+géneration d'une clé ssh puis ajout de celle-ci dans github et dans le fichier rocky-8.cfg
 
 **Test du playbook:**
 
