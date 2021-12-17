@@ -1,24 +1,25 @@
 # TP1Cloud
 Thomas DRONET
 
-Update
-dnf update
+**Update**
 
-installatino Ansible :
+`dnf update`
+
+**installation Ansible :**
 
 `dnf install ansible`
 
-installation git:
+**installation git:**
 
 `dnf install git`
 
-configuration git:
+**configuration git:**
 
 `git config --global user.name "Moulbyte"`
 `git config --global user.email "etuthomas2705@gmail.com"`
 
 
-test du playbook:
+**test du playbook:**
 
 `ansible-playbook playbook.yml`
 
