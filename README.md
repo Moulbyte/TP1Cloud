@@ -18,6 +18,9 @@ Thomas DRONET
 `git config --global user.name "Moulbyte"`
 `git config --global user.email "etuthomas2705@gmail.com"`
 
+**clé ssh**
+
+> géneration d'une clé ssh puis ajout de celle-ci dans githube et dans le fichier rocky-8.cfg
 
 **Test du playbook:**
 
