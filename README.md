@@ -16,6 +16,7 @@ Thomas DRONET
 **Configuration git:**
 
 `git config --global user.name "Moulbyte"`
+
 `git config --global user.email "etuthomas2705@gmail.com"`
 
 **clé ssh**
